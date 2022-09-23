@@ -1,4 +1,4 @@
-# Heroku buildpack to which installs cloudflared
+# Heroku buildpack which installs cloudflared
 
 This is a Heroku buildpack that makes `cloudflared` available to your heroko dyno.
 
