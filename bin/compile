@@ -27,8 +27,8 @@ cp $BP_DIR/profile/* $BUILD_DIR/.profile.d/
 
 echo "-----> Installing cloudflared"
 
-echo "       Downloading latest cloudflared..."
-download_url="https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64"
+echo "       Downloading cloudflared version 2023.4.1..."
+download_url="https://github.com/cloudflare/cloudflared/releases/tag/2023.4.1/download/cloudflared-linux-amd64"
 curl $download_url -s -L -o "$BUILD_DIR/.heroku/cloudflared/cloudflared"
 chmod +x "$BUILD_DIR/.heroku/cloudflared/cloudflared"
 echo "       Finished installing cloudflared..."
